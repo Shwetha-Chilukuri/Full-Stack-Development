@@ -73,7 +73,6 @@ class TaskManager {
   }
 }
 
-// Example usage
 const taskManager = new TaskManager();
 
 const task1 = new Task("Finish project", 1, "2025-01-10");
