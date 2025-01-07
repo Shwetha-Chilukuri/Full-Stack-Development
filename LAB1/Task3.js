@@ -10,9 +10,9 @@ function Person(name, age) {
   };
 }
 
-let person1 = new Person("John", 20);
+let person1 = new Person("Shwetha", 19);
 person1.greet();
 console.log(person1.isAdult());
-let person2 = new Person("Emily", 16);
+let person2 = new Person("Hansika", 20);
 person2.greet();
 console.log(person2.isAdult()); 

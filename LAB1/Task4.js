@@ -8,9 +8,9 @@ function Student(name, grade) {
     return `${this.name}'s grade is: ${this.grade}`;
   };
 }
-let student1 = new Student("Alice", "A");
-let student2 = new Student("Bob", "B");
-let student3 = new Student("Charlie", "C");
+let student1 = new Student("Abc", "A");
+let student2 = new Student("Bcd", "B");
+let student3 = new Student("Cde", "C");
 student1.study();
 student2.study();
 student3.study();
