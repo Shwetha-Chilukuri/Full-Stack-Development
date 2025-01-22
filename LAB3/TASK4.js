@@ -1,29 +1,20 @@
 function fetchDataWithCallback(callback) {
     setTimeout(() => {
-      const isSuccess = Math.random() > 0.5;
-      if (isSuccess) {
-        const data = { id: 1, name: "Sample Data" };
-        callback(null, data); 
+      const flag = Math.random() > 0.5;
+      if (flag) {
+        const result = { id: 1, name: "Hansika Chilukuri" };
+        callback(null, result); 
       } else {
-        const errorMessage = "Failed to fetch data.";
-        callback(errorMessage, null); 
+        callback("Failed to fetch data.", null); 
       }
-    }, 1000); 
-  }
-  fetchDataWithCallback((error, data) => {
-    if (error) {
-      console.error("Error:", error);
+    }, 2000); 
+}
+fetchDataWithCallback((err, data) => {
+    if (err) {
+      console.error("Error:", err);
     } else {
       console.log("Success:", data);
     }
-  });
-  for (let i = 0; i < 3; i++) {
-    fetchDataWithCallback((error, data) => {
-      if (error) {
-        console.error("Attempt failed:", error);
-      } else {
-        console.log("Attempt succeeded:", data);
-      }
-    });
-  }
+});
+
   
