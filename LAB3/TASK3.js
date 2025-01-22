@@ -1,9 +1,9 @@
-function delayedMessage(message, delay, callback) {
+function delayedMessage(msg, dly, callback) {
     setTimeout(() => {
-        console.log(message);
+        console.log(msg);
         callback();
-    }, delay);
+    }, dly);
 }
-delayedMessage("Hello, World!", 2000, () => {
-    console.log("Message printed!");
+delayedMessage("Hello, Greetings  to all", 4000, () => {
+    console.log("function completed");
 });
