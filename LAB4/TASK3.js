@@ -40,7 +40,7 @@ function displayChart(dates,temperatures){
     });
 }
 fetchbtn.addEventListener('click', function() {
-    const city = document.getElementById('cityInput').value;
+    const city = cityip.value;
     if (city) {
       getWeather(city);
     } else {
