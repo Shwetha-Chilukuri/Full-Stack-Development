@@ -18,14 +18,14 @@ async function getWeather(city){
 function displayChart(dates,temperatures){
     const ctx = document.getElementById('weatherChart').getContext('2d');
     const weatherChart = new Chart(ctx, {
-      type: 'polarArea',
+      type: 'bar',
       data: {
         labels: dates,
         datasets: [{
           label: 'Temperature (°C)',
           data: temperatures,
-          borderColor: 'rgba(75, 192, 192, 1)',
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgb(22, 58, 218)',
+          backgroundColor: 'rgba(4, 8, 206, 0.96)',
           fill: true
         }]
       },
