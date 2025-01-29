@@ -18,7 +18,7 @@ async function getWeather(city){
 function displayChart(dates,temperatures){
     const ctx = document.getElementById('weatherChart').getContext('2d');
     const weatherChart = new Chart(ctx, {
-      type: 'bar',
+      type: 'polarArea',
       data: {
         labels: dates,
         datasets: [{
