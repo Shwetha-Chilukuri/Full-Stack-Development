@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const MONGO_URL = 'mongodb://localhost:27017/taskDB';
-mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGO_URL)
     .then(() => console.log('Connected to MongoDB'))
     .catch(error => console.log('Error connecting to MongoDB:', error));
 
